@@ -1,0 +1,27 @@
+Identificando Comandos Básicos de SQL
+
+# Recebe a entrada do usuário e armazena na variável "entrada"
+entrada = input()
+
+# Função responsável por receber um comando SQL e retornar sua descrição.
+def descrever_comando_sql(comando):
+    if comando == "SELECT":
+        return "Usado para consultar dados em uma tabela"
+    
+    # Comando INSERT: usado para inserir novos dados em uma tabela
+    elif comando == "INSERT":
+        return "Usado para inserir novos dados em uma tabela"
+    
+    # Comando UPDATE: usado para atualizar registros existentes em uma tabela
+    elif comando == "UPDATE":
+        return "Usado para atualizar registros existentes em uma tabela"
+    
+    # Comando DELETE: usado para deletar registros de uma tabela
+    elif comando == "DELETE":
+        return "Usado para deletar registros de uma tabela"
+    
+    else:
+        return "Comando SQL desconhecido"
+
+# Imprime a descrição do comando recebido na entrada
+print(descrever_comando_sql(entrada))
