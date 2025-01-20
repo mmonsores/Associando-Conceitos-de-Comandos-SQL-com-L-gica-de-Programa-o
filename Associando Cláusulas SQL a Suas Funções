@@ -1,0 +1,27 @@
+Associando Cláusulas SQL a Suas Funções
+
+# Recebe a entrada do usuário e armazena na variável "entrada"
+entrada = input()
+
+# Função responsável por receber uma cláusula SQL e retornar sua descrição.
+def descrever_clausula_sql(clausula):
+    if clausula == "WHERE":
+        return "Usado para filtrar registros com base em uma condição"
+    
+    # Cláusula GROUP BY: usada para agrupar registros por colunas específicas
+    elif clausula == "GROUP BY":
+        return "Usado para agrupar registros por colunas específicas"
+    
+    # Cláusula ORDER BY: usada para ordenar os registros de uma consulta
+    elif clausula == "ORDER BY":
+        return "Usado para ordenar os registros de uma consulta"
+    
+    # Cláusula HAVING: usada para filtrar grupos com base em uma condição
+    elif clausula == "HAVING":
+        return "Usado para filtrar grupos com base em uma condição"
+    
+    else:
+        return "Cláusula SQL desconhecida"
+
+# Imprime a descrição da cláusula recebida na entrada
+print(descrever_clausula_sql(entrada))
